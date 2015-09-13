@@ -4,7 +4,11 @@
   "description": "A startpoint for universal (Isomporphic) JavaScript ES6 applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint source",
+    "clean": "rm -rf build/* && mkdir build/public && mkdir build/server && mkdir build/client",
+    "build-server": "babel -d build/server source/server -s",
+    "build-client": "browserify source/client/index.js -t babelify --outfile build/client/bundle.js",
+    "build": "npm run clean && npm run build-server && npm build-client"
   },
   "repository": {
     "type": "git",
