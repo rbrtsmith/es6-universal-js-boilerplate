@@ -4,14 +4,27 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var Hello = function Hello() {
+var Hello = function Hello(props) {
 
   return {
+
+    props: props, // set props
+
     render: function render() {
-      return React.createElement(
-        "p",
-        null,
-        "Hello, World!"
+
+      // get `word` from props obj with
+      // es6 destructuring:
+      var word = this.props.word;
+
+      return(
+        // Fill in the { blanks }
+        React.createElement(
+          "p",
+          null,
+          "Hello, ",
+          word,
+          "!"
+        )
       );
     }
   };
@@ -29,6 +42,8 @@ var _helloWorldJs = require('./hello-world.js');
 
 var _helloWorldJs2 = _interopRequireDefault(_helloWorldJs);
 
-React.render(React.createElement(_helloWorldJs2['default'], null), document.getElementById('content'));
+var word = 'puppy';
+
+React.render(React.createElement(_helloWorldJs2['default'], { word: word }), document.getElementById('content'));
 
 },{"./hello-world.js":1}]},{},[2]);
