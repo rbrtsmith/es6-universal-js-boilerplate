@@ -1,0 +1,35 @@
+{
+  "name": "es6-universal-js-boilerplate",
+  "version": "1.0.0",
+  "description": "A startpoint for universal (Isomporphic) JavaScript ES6 applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbrtsmith/es6-universal-js-boilerplate.git"
+  },
+  "keywords": [
+    "ES6",
+    "Isormoprhic",
+    "Universal",
+    "JavaScript"
+  ],
+  "author": "Robert Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbrtsmith/es6-universal-js-boilerplate/issues"
+  },
+  "homepage": "https://github.com/rbrtsmith/es6-universal-js-boilerplate#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "eslint": "^1.4.1"
+  },
+  "dependencies": {
+    "core-js": "^1.1.4"
+  }
+}
