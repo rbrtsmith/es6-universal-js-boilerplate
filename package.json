@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint source",
-    "clean": "rm -rf build/* && mkdir build/public && mkdir build/server && mkdir build/client",
-    "build-server": "babel -d build/server source/server -s",
-    "build-client": "browserify source/client/index.js -t babelify --outfile build/client/bundle.js",
+    "clean": "rm -rf dist/* && mkdir dist/public && mkdir dist/server && mkdir dist/client",
+    "build-server": "babel -d dist/server source/server -s",
+    "build-client": "browserify source/client/hello-world.js -t babelify --outfile dist/client/bundle.js",
     "build": "npm run clean && npm run build-server && npm build-client"
   },
   "repository": {
