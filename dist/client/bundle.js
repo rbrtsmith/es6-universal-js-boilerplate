@@ -20,4 +20,15 @@ var Hello = function Hello() {
 exports["default"] = Hello;
 module.exports = exports["default"];
 
-},{}]},{},[1]);
+},{}],2:[function(require,module,exports){
+'use strict';
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _helloWorldJs = require('./hello-world.js');
+
+var _helloWorldJs2 = _interopRequireDefault(_helloWorldJs);
+
+React.render(React.createElement(_helloWorldJs2['default'], null), document.getElementById('content'));
+
+},{"./hello-world.js":1}]},{},[2]);
